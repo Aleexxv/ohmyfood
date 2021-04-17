@@ -1,0 +1,194 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "utils/placeholders";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+
+//Générality
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.logo{
+    width: 11rem;
+    padding: .5rem 0; 
+}
+
+.flex{
+    @extend %flex;
+}
+
+.flex-center{
+    @extend %flex-center;
+}
+
+.justify-content-around{
+    @extend %flex-around;
+}
+
+.justify-content-between{
+    @extend %flex-between;
+}
+
+.color-white{
+    background: white;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: $color-shadows 0 0 2rem 0;
+}
+
+header{
+    @extend %flex;
+    @extend %flex-center;
+    box-shadow: $color-shadows 0 0 2rem 0;
+    
+}
+
+h2{
+    justify-content: start;
+}
+
+h3{
+    margin-bottom: .3rem;
+}
+
+h4{
+    font-family: 'Shrikhand', serif;
+    font-weight: 300;
+}
+
+i{
+    padding: 0 1rem 0 0;
+}
+
+img{
+    @extend %width-100;
+    object-fit: cover;
+}
+
+//Section
+
+.first-section{
+    @extend %flex-center;
+    flex-direction: column;
+}
+
+.first-section .presentation, .second-section{
+    padding: 0 1rem;
+}
+
+.first-section, .third-section{
+    background: $background-color-grey-clear;
+}
+
+.background-color-grey-dark{
+    background: $background-color-grey-dark;
+}
+
+.third-section{
+    padding: 1.5rem 1rem;
+}
+
+
+//Navigation
+
+.menu-cards{
+    ul{
+        margin: 1rem;
+        padding-left: 0;
+        li{
+            background: $background-color-grey-clear;
+            @include item-menu-card;
+            position: relative;
+            padding-left: 2rem;
+        }
+    }
+}
+
+.numbering-of-functions{
+    @extend %numbering-of-functions;
+}
+
+.restaurants-cards{
+    figure{
+        @extend %figure;
+        img{
+            border-radius: 1rem 1rem 0 0;
+            height: 11rem;
+        }
+    }
+}
+
+figcaption{
+    padding-left: 1rem;
+}
+
+figcaption p{
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+//Button
+
+.main-btn{
+    @include main-btn;
+}
+
+//footer
+
+footer{
+    background: $bacckground-footer;
+    color: white;
+    padding: 1rem;
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            padding: .3rem 0;
+        }
+    }
+}
+
+//pages restaurants
+
+.header-restaurants{
+    flex-direction: column;
+}
+
+.i{
+    padding : 2rem;
+    font-size: 1.5rem;
+}
+
+.restaurants-section{
+    background: $background-color-grey-clear;
+    position: relative;
+    bottom: 3.2rem;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.h1{
+    font-family: 'Shrikhand', serif;
+    font-weight: 300;
+    padding: 0rem 1rem;
+}
+
+.price{
+    padding-top: 3rem;
+}
+
+.validation{
+    background: $color-tertiary;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.validation .i{
+    color: white;
+    @extend %flex-center;
+}
+
+

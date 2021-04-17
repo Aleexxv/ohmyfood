@@ -1,0 +1,17 @@
+@mixin main-btn{
+    background: linear-gradient(0.99turn, $color-primary, $color-secondary);
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+}
+
+@mixin item-menu-card{
+    list-style: none;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+}
+

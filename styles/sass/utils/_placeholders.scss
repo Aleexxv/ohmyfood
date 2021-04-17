@@ -1,0 +1,40 @@
+%flex{
+    display: flex;
+}
+
+%flex-center{
+    justify-content: center;
+    text-align: center;
+}
+
+%flex-around{
+    justify-content: space-around;
+}
+
+%flex-between{
+    justify-content: space-between;
+}
+
+
+%numbering-of-functions{
+    background: $color-primary;
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1.5rem;
+    position: absolute;
+    left: -.5rem;
+    bottom: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+%width-100{
+    width: 100%;
+}
+
+%figure{
+    background: white;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
