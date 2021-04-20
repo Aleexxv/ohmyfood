@@ -327,6 +327,73 @@ footer a {
   margin: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav, .first-section {
+    justify-content: space-around;
+    display: flex;
+  }
+
+  .first-section {
+    flex-direction: row-reverse;
+  }
+
+  .second-section {
+    padding: 2rem 0;
+  }
+
+  .background-color-grey-dark {
+    flex-direction: row-reverse;
+    line-height: 10.5rem;
+    padding: 0 3rem;
+  }
+
+  figure {
+    min-width: 18rem;
+  }
+
+  footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: space-around;
+    display: flex;
+    position: relative;
+    bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 2rem;
+  }
+
+  .h2 {
+    justify-content: space-around;
+    padding-top: 1.5rem;
+  }
+
+  .name-restaurants {
+    justify-content: space-around;
+  }
+
+  .item-menu {
+    padding-top: 2rem;
+  }
+
+  .color-white {
+    min-width: 19rem;
+  }
+
+  .img-desktop {
+    max-height: 15rem;
+  }
+
+  .btn-page-menu {
+    margin: 1rem 0;
+  }
+}
 @media only screen and (min-width: 1224px) {
   h2 {
     display: flex;
