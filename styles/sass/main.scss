@@ -337,3 +337,42 @@ footer a{
     margin: 0;
 }
 
+@media only screen and (min-width : 1224px) {
+
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+
+    nav, .section-desktop, .first-section{
+        justify-content: space-around;
+        display: flex;
+    }
+
+    .first-section{flex-direction: row-reverse;}
+
+    .second-section{
+        padding: 2rem 0;
+    }
+
+    .background-color-grey-dark{
+        flex-direction: row-reverse;
+        line-height: 10.5rem;
+        padding: 0 3rem;
+    }
+
+    figure{
+    min-width: 18rem;
+    }
+
+    footer{
+        padding-left: 15rem;
+        padding-right: 15rem;
+        justify-content: space-around;
+        display: flex;
+    }
+
+    footer h4{
+        font-size: 2rem;
+    }
+}
