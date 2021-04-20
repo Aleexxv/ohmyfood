@@ -333,7 +333,7 @@ footer a {
     justify-content: center;
   }
 
-  nav, .section-desktop, .first-section {
+  nav, .section-desktop, .first-section, .section-desktop-restaurants-pages {
     justify-content: space-around;
     display: flex;
   }
@@ -365,6 +365,31 @@ footer a {
 
   footer h4 {
     font-size: 2rem;
+  }
+
+  .h2 {
+    justify-content: space-around;
+    padding-top: 1.5rem;
+  }
+
+  .name-restaurants {
+    justify-content: space-around;
+  }
+
+  .item-menu {
+    padding-top: 2rem;
+  }
+
+  .color-white {
+    min-width: 19rem;
+  }
+
+  .img-desktop {
+    max-height: 15rem;
+  }
+
+  .btn-page-menu {
+    margin: 1rem 0;
   }
 }
 
