@@ -349,6 +349,16 @@ footer a{
         display: flex;
     }
 
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li i{
+        padding-bottom: .5rem;
+    }
+
     .first-section{
         flex-direction: row-reverse;
     }
@@ -409,11 +419,13 @@ footer a{
         justify-content: center;
     }
 
-    
-
     nav, .section-desktop, .first-section, .section-desktop-restaurants-pages{
         justify-content: space-around;
         display: flex;
+    }
+
+    nav ul li {
+        display: initial;
     }
 
     .first-section{
