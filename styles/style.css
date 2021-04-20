@@ -349,11 +349,11 @@ footer a {
   .background-color-grey-dark {
     flex-direction: row-reverse;
     line-height: 10.5rem;
-    padding: 0 3rem;
+    padding: 0 1.5rem;
   }
 
   figure {
-    min-width: 18rem;
+    min-width: 17rem;
   }
 
   footer {
