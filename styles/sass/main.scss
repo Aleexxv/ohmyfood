@@ -108,7 +108,7 @@ div .fa-heart{
 //Section
 
 .loader-home-page{
-    animation: disparition linear 2s both;
+    animation: disparition linear 1s both;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -183,7 +183,7 @@ div .fa-heart{
 }
 
 .first-section .presentation, .second-section{
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 
 .first-section, .third-section{
@@ -381,7 +381,7 @@ footer a{
     }
 
     .second-section{
-        padding: 2rem 0;
+        padding: 2rem 1rem;
     }
 
     .background-color-grey-dark{
