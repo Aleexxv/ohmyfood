@@ -117,6 +117,15 @@ div .fa-heart {
   color: white;
 }
 
+.loader-home-page {
+  animation: disparition linear 2s both;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
 .bg-loader {
   background: #fafafa;
 }
@@ -129,13 +138,7 @@ div .fa-heart {
   border-left: 0.5rem solid rgba(255, 255, 255, 0);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.8);
-  margin: auto auto;
   animation: spin 1s linear infinite;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .loader-1 {
@@ -166,6 +169,17 @@ div .fa-heart {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes disparition {
+  0% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0%;
   }
 }
 .first-section {
@@ -377,6 +391,10 @@ footer a {
 
   footer h4 {
     font-size: 2rem;
+  }
+
+  div .fa-heart {
+    margin-top: 1.9rem;
   }
 
   .h2 {
