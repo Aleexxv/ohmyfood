@@ -365,7 +365,6 @@ footer a {
 
 .price {
   padding: 3rem 1rem 0 0;
-  display: initial !important;
 }
 
 .validation {
@@ -380,7 +379,7 @@ footer a {
 .validation .i {
   color: white;
   line-height: 3rem;
-  animation: spin_2 0.5s linear 1;
+  animation: spin_2 0.24s linear 2;
 }
 
 .titles-menu {
