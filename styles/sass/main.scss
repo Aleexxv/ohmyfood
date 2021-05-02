@@ -43,6 +43,7 @@ body{
     box-shadow: $color-shadows 0 0 2rem 0;
     z-index: 1;
     animation: gliss ease-in-out 2s;
+    cursor: pointer;
 }
 
 .bg-gliss:nth-child(2) {
@@ -101,21 +102,6 @@ a{
 
 figure{
     position: relative;
-}
-
-.heart-no-valid, .heart-valid{
-    margin: .6rem 1rem 0 0;
-}
-
-.heart-valid{
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: none;
-}
-
-.heart-no-valid::before:hover .heart-valid{
-    display: initial !important;
 }
 
 //Section
@@ -202,10 +188,21 @@ figure{
 
 @keyframes opening{
     0%{
-        translate: 100%;
+        opacity: 0;
     }
+    50%{
+        transform: translateX(60px);
+        opacity: 0;
+    }
+
+    90%{
+        opacity: 1;
+        transform: translateX(00px);
+    }
+
     100%{
-        translate: 0%;
+        transform: translateX(0px);
+        opacity: 1;
     }
 }
 
@@ -297,13 +294,24 @@ figcaption p{
 .heart-absolute{
     position: absolute;
     right: 0rem;
-    top: 11rem;
+    top: 10rem;
 }
 
-.fa-heart:hover::before{
+.heart-no-valid, .heart-valid{
+    margin: .6rem 1rem 0 0;
+}
+
+.heart-valid{
     background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    visibility: hidden;
+    position: absolute;
+    cursor: pointer;
+}
+
+.heart-no-valid:hover .heart-valid{
+    visibility: visible !important;
 }
 
 .news{
@@ -371,13 +379,16 @@ footer a{
 
 .price{
     padding: 3rem 1rem 0 0;
+    display: initial !important;
 }
 
 .validation{
     background: $color-tertiary;
     border-radius: 0 1rem 1rem 0;
     display: none;
-    animation: opening .5s ease-in-out forwards;
+    animation: opening .5s ease-in-out ;
+    transform: translate(0%, 0%);
+    opacity: 1;
 }
 
 .validation .i{
