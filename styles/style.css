@@ -533,6 +533,7 @@ footer a {
     flex-direction: row-reverse;
     line-height: 10.5rem;
     padding: 0 1.5rem;
+    background: #fafafa;
   }
 
   figure {
