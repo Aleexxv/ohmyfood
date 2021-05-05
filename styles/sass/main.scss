@@ -309,6 +309,18 @@ figure{
     }
 }
 
+.menu-cards i{
+    color: grey;
+}
+
+.menu-cards:hover i{
+    color: $color-primary;
+}
+
+.menu-cards ul li:hover{
+    background: rgba(210, 143, 255, .2);
+}
+
 .numbering-of-functions{
     @extend %numbering-of-functions;
 }

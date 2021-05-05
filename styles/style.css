@@ -274,6 +274,18 @@ figure {
   padding-left: 2rem;
 }
 
+.menu-cards i {
+  color: grey;
+}
+
+.menu-cards:hover i {
+  color: #9356DC;
+}
+
+.menu-cards ul li:hover {
+  background: rgba(210, 143, 255, 0.2);
+}
+
 .restaurants-cards figure img {
   border-radius: 1rem 1rem 0 0;
   height: 11rem;
