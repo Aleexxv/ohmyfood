@@ -189,23 +189,6 @@ figure {
     opacity: 0%;
   }
 }
-@keyframes opening {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(60px);
-    opacity: 0;
-  }
-  90% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
 @keyframes gliss {
   0% {
     opacity: 0;
@@ -229,6 +212,27 @@ figure {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes coeur {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes icone2 {
+  0% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-100%);
   }
 }
 .first-section {
@@ -296,31 +300,8 @@ figcaption p {
 }
 
 .main-btn:hover {
-  background: linear-gradient(0.98turn, #9356DC, #FF79DA);
+  background: linear-gradient(0.7turn, #9356DC, #FF79DA);
   opacity: 0.9;
-}
-
-.heart-absolute {
-  position: absolute;
-  right: 0rem;
-  top: 10rem;
-}
-
-.heart-no-valid, .heart-valid {
-  margin: 0.6rem 1rem 0 0;
-}
-
-.heart-valid {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  visibility: hidden;
-  position: absolute;
-  cursor: pointer;
-}
-
-.heart-no-valid:hover .heart-valid {
-  visibility: visible !important;
 }
 
 .news {
@@ -331,6 +312,50 @@ figcaption p {
   display: inline-block;
   color: #1d6651;
   padding: 0.5rem 0.7rem;
+}
+
+.coeur-plein {
+  background: -webkit-linear-gradient(0.98turn, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  padding: 0;
+  z-index: 1;
+  position: relative;
+}
+
+.gros {
+  font-size: 5rem;
+}
+
+.menus-2:hover .coeur-plein {
+  animation: icone2 0.5s linear 1 forwards;
+}
+
+.menus-2 {
+  padding-top: 1rem;
+  position: relative;
+  right: -1.5rem;
+}
+
+.coeur-vide {
+  cursor: pointer;
+  padding: 0;
+}
+
+.coeur-vide:hover {
+  transition: color 1s;
+  color: #fafafa;
+}
+
+.coeur-page-acceuil {
+  position: absolute;
+  left: 14rem;
+  bottom: 0.5rem;
+}
+
+.coeur-absolute {
+  position: relative;
 }
 
 footer {
