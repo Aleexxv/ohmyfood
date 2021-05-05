@@ -93,6 +93,7 @@ i{
 img{
     @extend %width-100;
     object-fit: cover;
+    line-height: -1rem;
 }
 
 a{
@@ -374,19 +375,19 @@ figcaption p{
 
 
 .coeur-plein{
-    background: -webkit-linear-gradient(.98turn, $color-primary, $color-secondary);
+    background: -webkit-linear-gradient(.60turn, $color-primary, $color-secondary);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
     padding: 0;
     z-index: 1;
     position: relative;
-    translate: (1px);
-    bottom: 1px;
+    translate: (2px);
+    bottom: 3px;
 }
 
 .coeur-plein i{
-    font-size: 27px;
+    font-size: 28px;
 }
 
 .menus-2:hover .coeur-plein{
@@ -407,15 +408,15 @@ figcaption p{
 }
 
 .coeur-vide:hover{
-    transition: color .7s linear;
+    transition: color .5s linear;
     color: $background-color-grey-clear;
 }
 
 
 .coeur-page-acceuil{
     position: absolute;
-    left: 14rem;
-    bottom: .5rem;
+    bottom: .1rem;
+    right: -3.5em;
 }
 
 .coeur-absolute{
@@ -463,6 +464,10 @@ footer a{
 }
 
 //pages restaurants
+
+.img-page-restaurants{
+    height: 16rem;
+}
 
 .background-pages-restaurant{
     background: $background-color-grey-clear;
@@ -643,9 +648,18 @@ footer a{
         justify-content: center;
     }
 
-    nav, .section-desktop, .first-section, .section-desktop-restaurants-pages{
+    nav, .section-desktop, .first-section{
         justify-content: space-around;
         display: flex;
+    }
+
+    .section-desktop-restaurants-pages{
+        display: table-cell;
+    }
+
+    .desktop-restaurants-pages{
+        display: flex;
+        justify-content: space-around;
     }
 
     nav ul li {
@@ -700,7 +714,7 @@ footer a{
     }
 
     .menus{
-        min-width: 19rem;
+        min-width: 24rem;
     }
 
     .img-desktop{
