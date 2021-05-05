@@ -242,7 +242,7 @@ figure{
 @keyframes icone2{
     0%{
         opacity: 0;
-        transform: translateX(0%);
+        transform: translateX(10%);
     }
 
     90%{
@@ -381,10 +381,16 @@ figcaption p{
     padding: 0;
     z-index: 1;
     position: relative;
+    translate: (1px);
+    bottom: 1px;
+}
+
+.coeur-plein i{
+    font-size: 27px;
 }
 
 .menus-2:hover .coeur-plein{
-    animation: icone2 .5s linear 1 forwards;
+    animation: icone2 .5s ease-in-out 1 both;
 }
 
 
@@ -401,7 +407,7 @@ figcaption p{
 }
 
 .coeur-vide:hover{
-    transition: color 1s;
+    transition: color .7s linear;
     color: $background-color-grey-clear;
 }
 
