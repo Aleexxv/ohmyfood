@@ -498,6 +498,9 @@ footer a{
 
 .titles-menu{
     padding: 1rem 0 1rem 1rem;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
 }
 
 .item-menu{
@@ -527,8 +530,10 @@ footer a{
 }
 
 .price-2{
-    padding-top: 2.8rem;
-    margin-right: .6rem;
+    padding: 2.8rem .6rem 0 .6rem;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
 }
 
 
@@ -539,6 +544,9 @@ footer a{
 
 .menus:hover .checking{
     animation: test_slide 1s forwards;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
 }
 
 .menus:hover .vald{
@@ -549,11 +557,13 @@ footer a{
     animation: spin_2 .75s linear 1;
 }
 
-
 .checking{
     position: absolute;
     bottom: 0;
     right: -3rem;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
 }
 
 .logo-restaurants{
@@ -566,7 +576,7 @@ footer a{
     margin: 0;
 }
 
-@media only screen and (min-width : 768px) {
+@media only screen and (max-width : 768px) {
 
     h2{
         display: flex;
@@ -633,7 +643,12 @@ footer a{
 
     .img-desktop{
         max-height: 15rem;
-    }    
+    }
+    
+    .vald .i-2{
+        padding: 2rem 1rem;
+        font-size: 1.5rem;
+    }
 
     .btn-page-menu{
         margin: 1rem 0;
