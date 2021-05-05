@@ -324,7 +324,7 @@ figcaption p {
   position: relative;
 }
 
-.gros {
+.i-2 {
   font-size: 5rem;
 }
 
@@ -523,7 +523,7 @@ footer a {
   }
 
   div .fa-heart {
-    margin-top: 1.9rem;
+    margin-top: 1rem;
   }
 
   .h2 {
@@ -599,7 +599,7 @@ footer a {
   }
 
   .menus {
-    min-width: 21rem;
+    min-width: 19rem;
   }
 
   .img-desktop {
