@@ -324,10 +324,6 @@ figcaption p {
   position: relative;
 }
 
-.i-2 {
-  font-size: 5rem;
-}
-
 .menus-2:hover .coeur-plein {
   animation: icone2 0.5s linear 1 forwards;
 }
