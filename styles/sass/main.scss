@@ -164,20 +164,21 @@ figure{
 
 @keyframes spin {
     0%{
-        transform: rotate(0deg)
+        transform: rotate(0deg);
     }
     100%{
-        transform: rotate(360deg)
+        transform: rotate(360deg);
     }
 
 }
 
 @keyframes spin_2 {
     0%{
-        transform: rotate(360deg)
+        transform: rotate(360deg);
     }
+
     100%{
-        transform: rotate(0deg)
+        transform: rotate(0deg);
     }
 
 }
@@ -200,42 +201,29 @@ figure{
 @keyframes gliss{
     0%{
         opacity: 0;
-        transform: translateY(100%) scale(1)
-    }
-}
-
-@keyframes test_slide{
-    0%{
-        right: -3rem;
-    }
-
-    100%{
-        right: 0;
+        transform: translateY(100%) scale(1);
     }
 }
 
 @keyframes icone{
     0%{
-        opacity: 0;
+        width: 0;
     }
 
-    80%{
-        opacity: .5;
-    }
 
     100%{
-        opacity: 1;
+        width: 3.5rem;
     }
 }
 
 
 @keyframes coeur{
     0%{
-        opacity: 0;
+
     }
 
     100%{
-        opacity: 1;
+
     }
 }
 
@@ -243,16 +231,10 @@ figure{
 @keyframes icone2{
     0%{
         opacity: 0;
-        transform: translateX(10%);
-    }
-
-    90%{
-        opacity: 0;
     }
 
     100%{
         opacity: 1;
-        transform: translateX(-100%);
     }
 }
 
@@ -383,20 +365,26 @@ figcaption p{
 
 
 
+.i-3{
+    line-height: 4.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
 
-
+.test-coeur{
+    padding-top: 1.5rem;
+}
 
 
 .coeur-plein{
     background: -webkit-linear-gradient(.60turn, $color-primary, $color-secondary);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 0;
     padding: 0;
     z-index: 1;
     position: relative;
-    translate: (2px);
-    bottom: 3px;
+    right: 28px;
+    opacity: 0;
 }
 
 .coeur-plein i{
@@ -405,13 +393,14 @@ figcaption p{
 
 .menus-2:hover .coeur-plein{
     animation: icone2 .5s ease-in-out 1 both;
+    z-index: 2;
 }
 
 
 .menus-2{
-    padding-top: 1rem;
     position: relative;
-    right: -1.5rem;
+    right: .2rem;
+
 }
 
 
@@ -420,7 +409,7 @@ figcaption p{
     padding: 0;
 }
 
-.coeur-vide:hover{
+.menus-2:hover .coeur-vide{
     transition: color .5s linear;
     color: $background-color-grey-clear;
 }
@@ -511,9 +500,6 @@ footer a{
 
 .titles-menu{
     padding: 1rem 0 1rem 1rem;
-    overflow: hidden !important;
-    white-space: nowrap !important;
-    text-overflow: ellipsis !important;
 }
 
 .item-menu{
@@ -524,6 +510,14 @@ footer a{
     display: block;
     font-weight: initial;
     padding-bottom: .2rem;
+}
+
+.titles-menu > span{
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    width: 17rem;
+    display: block;
 }
 
 .menus{
@@ -539,14 +533,16 @@ footer a{
     background: $color-tertiary;
     color: white;
     border-radius: 0 1rem 1rem 0;
-    opacity: 0;
+    width: 0rem;
+    overflow: hidden;
+}
+
+.i-2{
+    transform: translateX(-3.5rem);
 }
 
 .price-2{
     padding: 2.8rem .6rem 0 .6rem;
-    overflow: hidden !important;
-    white-space: nowrap !important;
-    text-overflow: ellipsis !important;
 }
 
 
@@ -555,28 +551,19 @@ footer a{
     font-size: 1.5rem;
 }
 
-.menus:hover .checking{
-    animation: test_slide 1s forwards;
-    overflow: hidden !important;
-    white-space: nowrap !important;
-    text-overflow: ellipsis !important;
-}
 
 .menus:hover .vald{
     animation: icone .5s linear 1 forwards;
 }
 
 .menus:hover .i-2{
-    animation: spin_2 .75s linear 1;
+    animation: spin_2 .5s linear 1 forwards;
 }
 
 .checking{
     position: absolute;
     bottom: 0;
-    right: -3rem;
-    overflow: hidden !important;
-    white-space: nowrap !important;
-    text-overflow: ellipsis !important;
+    right: 0;
 }
 
 .logo-restaurants{
@@ -648,6 +635,7 @@ footer a{
 
     div .fa-heart {
         margin-top: 1rem;
+        padding: 1rem;
     }
 
     .h2{
@@ -659,10 +647,6 @@ footer a{
         max-height: 15rem;
     }
     
-    .vald .i-2{
-        padding: 2rem 1rem;
-        font-size: 1.5rem;
-    }
 
     .btn-page-menu{
         margin: 1rem 0;
@@ -720,8 +704,6 @@ footer a{
         padding-right: 15rem;
         justify-content: space-around;
         display: flex;
-        position: relative;
-        bottom: 0;
     }
 
     footer h4{
