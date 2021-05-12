@@ -295,7 +295,7 @@ figure{
     color: grey;
 }
 
-.menu-cards:hover i{
+.menu-cards ul li:hover i{
     color: $color-primary;
 }
 
@@ -417,8 +417,8 @@ figcaption p{
 
 .coeur-page-acceuil{
     position: absolute;
-    bottom: .1rem;
-    right: -3.5em;
+    bottom: 1.5rem;
+    right: 0rem;
 }
 
 .coeur-absolute{
@@ -498,9 +498,6 @@ footer a{
     border-radius: 2rem 2rem 0 0;
 }
 
-.titles-menu{
-    padding: 1rem 0 1rem 1rem;
-}
 
 .item-menu{
     margin-left: 1.1rem;
@@ -512,12 +509,11 @@ footer a{
     padding-bottom: .2rem;
 }
 
-.titles-menu > span{
-    overflow: hidden !important;
-    white-space: nowrap !important;
-    text-overflow: ellipsis !important;
-    width: 17rem;
-    display: block;
+.titles-menu{
+    padding: 1rem 6rem 1rem 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .menus{
@@ -605,6 +601,17 @@ footer a{
     .second-section{
         padding: 2rem 1rem;
     }
+
+    .coeur-page-acceuil {
+        position: absolute;
+        bottom: 0.5rem;
+        right: -3rem;
+    }
+
+    .coeur-plein{
+        right: 60px;
+    }
+
 
     .background-color-grey-dark{
         flex-direction: row-reverse;
