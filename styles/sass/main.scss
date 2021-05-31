@@ -66,12 +66,12 @@ h4{
 }
 
 i{
-    padding: 0 1rem 0 0;
+    padding-right: .5rem;
 }
 
 .i{
     line-height: 4.5rem;
-    padding-top: 1.5rem;
+    padding: 1rem;
     font-size: 1.5rem;
 }
 
@@ -334,7 +334,7 @@ figcaption p{
     padding: 0;
     z-index: 1;
     position: relative;
-    right: 27px;
+    right: 28px;
     opacity: 0;
 }
 
@@ -356,6 +356,12 @@ figcaption p{
 .third__section__restaurants__cards__menu--hearts--vacuum{
     cursor: pointer;
     padding: 0;
+}
+
+.third__section__restaurants__cards__menu--hearts--vacuum--pages{
+    position: relative;
+    top: 1.5rem;
+    right: 1.7rem;
 }
 
 .third__section__restaurants__cards__menu:hover .third__section__restaurants__cards__menu--hearts--vacuum{
@@ -443,7 +449,6 @@ footer a{
 
 
 
-//pages restaurants
 
 //logo
 
@@ -453,11 +458,11 @@ footer a{
 }
 
 
-.img-page-restaurants{
+.img__page__restaurants{
     height: 16rem;
 }
 
-.background-pages-restaurant{
+.background__pages__restaurant{
     background: $background-color-grey-clear;
 }
 
@@ -465,19 +470,19 @@ footer a{
     flex-direction: column;
 }
 
-.menus{
+.menu{
     animation: gliss ease-in-out 2s;
 }
 
-.menus:nth-child(2){
+.menu:nth-child(2){
     animation: gliss ease-in-out 1s;
 }
 
-.menus:nth-child(3){
+.menu:nth-child(3){
     animation: gliss ease-in-out 1.5s;
 }
 
-.restaurants-section{
+.section__restaurants{
     background: $background-color-grey-clear;
     position: relative;
     bottom: 2rem;
@@ -485,7 +490,7 @@ footer a{
 }
 
 
-.item-menu{
+.item__menu{
     margin-left: 1.1rem;
     text-transform: uppercase;
     border-bottom: 3px solid $color-tertiary;
@@ -495,7 +500,7 @@ footer a{
     padding-bottom: .2rem;
 }
 
-.titles-menu{
+.menu__titles{
     padding: 1rem 0rem 1rem 1rem;
     overflow: hidden;
     white-space: nowrap;
@@ -508,16 +513,15 @@ footer a{
     }
 }
 
-.anim-checking{
+.menu__description{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding-right: 2rem;
+    padding-right: 4.5rem;
     display: block;
-    width: 85%;
 }
 
-.menus{
+.menu{
     background: white;
     margin: 1rem;
     border-radius: 1rem;
@@ -526,7 +530,7 @@ footer a{
     cursor: pointer;
 }
 
-.vald{
+.menu__validation{
     background: $color-tertiary;
     color: white;
     border-radius: 0 1rem 1rem 0;
@@ -534,42 +538,39 @@ footer a{
     overflow: hidden;
 }
 
-.i-2{
+.menu__i{
     transform: translateX(-3.5rem);
 }
 
-.price-2{
+.menu__price{
     padding: 2.8rem .6rem 0 .6rem;
 }
 
 
-.vald .i-2{
+.menu__validation .menu__i{
     padding: 1.8rem 1rem;
     font-size: 1.5rem;
 }
 
 
-.menus:hover .vald{
+.menu:hover .menu__validation{
     animation: icone .5s linear 1 forwards;
 }
 
-.menus:hover .i-2{
+.menu:hover .menu__i{
     animation: spin_2 .5s linear 1 forwards;
 }
 
-.checking{
+.menu__checking{
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-.menus:hover .titles-menu{
+.menu:hover .menu__titles{
     animation: checking_2 .5s linear forwards;
 }
 
-.menus:hover .anim-checking{
-    animation: checking_3 .5s linear forwards;
-}
 
 
 

@@ -40,6 +40,167 @@ img {
   margin: 1rem 0;
 }
 
+@media only screen and (min-width: 768px) {
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav, .first__section {
+    justify-content: space-around;
+    display: flex;
+  }
+
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li i {
+    padding-bottom: 0.5rem;
+  }
+
+  .first__section {
+    flex-direction: row-reverse;
+  }
+
+  .second__section {
+    padding: 2rem 1rem;
+  }
+
+  .third__section__restaurants__cards__menu--hearts {
+    position: absolute;
+    bottom: 0.5rem;
+    right: -3rem;
+  }
+
+  .third__section__restaurants__cards__menu--hearts--full {
+    right: 60px;
+  }
+
+  .first__section__backgrond {
+    flex-direction: row-reverse;
+    line-height: 10.5rem;
+    padding: 0 1.5rem;
+    background: #fafafa;
+  }
+
+  figure {
+    min-width: 17rem;
+  }
+
+  footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: space-around;
+    display: flex;
+    position: relative;
+    bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 2rem;
+  }
+
+  div .fa-heart {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .h2 {
+    justify-content: space-around;
+    padding-top: 1.5rem;
+  }
+
+  .img-desktop {
+    max-height: 15rem;
+  }
+
+  .btn-page-menu {
+    margin: 1rem 0;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav, .third__section__desktop, .first__section {
+    justify-content: space-around;
+    display: flex;
+  }
+
+  .third__section__restaurants__cards {
+    display: table-cell;
+  }
+
+  .desktop-restaurants-pages {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    display: initial;
+  }
+
+  .first__section {
+    flex-direction: row-reverse;
+    text-align: start;
+  }
+
+  .second__section {
+    padding: 2rem 0;
+  }
+
+  .first__section__background {
+    flex-direction: row-reverse;
+    line-height: 10.5rem;
+    padding: 0 3rem;
+    background: #fafafa;
+  }
+
+  figure {
+    width: 18rem;
+  }
+
+  footer {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    justify-content: space-around;
+    display: flex;
+  }
+
+  footer h4 {
+    font-size: 2rem;
+  }
+
+  .h2 {
+    justify-content: space-around;
+    padding-top: 1.5rem;
+  }
+
+  .name-restaurants {
+    justify-content: space-around;
+  }
+
+  .item-menu {
+    padding-top: 2rem;
+  }
+
+  .menus {
+    min-width: 24rem;
+  }
+
+  .img-desktop {
+    max-height: 15rem;
+  }
+
+  .btn-page-menu {
+    margin: 1rem 0;
+  }
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -97,14 +258,6 @@ img {
     padding-right: 1.5rem;
   }
 }
-@keyframes checking_3 {
-  0% {
-    width: 80%;
-  }
-  100% {
-    width: 70%;
-  }
-}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -142,12 +295,12 @@ h4 {
 }
 
 i {
-  padding: 0 1rem 0 0;
+  padding-right: 0.5rem;
 }
 
 .i {
   line-height: 4.5rem;
-  padding-top: 1.5rem;
+  padding: 1rem;
   font-size: 1.5rem;
 }
 
@@ -308,7 +461,7 @@ figcaption p {
   padding: 0;
   z-index: 1;
   position: relative;
-  right: 27px;
+  right: 28px;
   opacity: 0;
 }
 
@@ -328,6 +481,12 @@ figcaption p {
 .third__section__restaurants__cards__menu--hearts--vacuum {
   cursor: pointer;
   padding: 0;
+}
+
+.third__section__restaurants__cards__menu--hearts--vacuum--pages {
+  position: relative;
+  top: 1.5rem;
+  right: 1.7rem;
 }
 
 .third__section__restaurants__cards__menu:hover .third__section__restaurants__cards__menu--hearts--vacuum {
@@ -367,11 +526,11 @@ footer a {
   padding-right: 2rem;
 }
 
-.img-page-restaurants {
+.img__page__restaurants {
   height: 16rem;
 }
 
-.background-pages-restaurant {
+.background__pages__restaurant {
   background: #fafafa;
 }
 
@@ -379,26 +538,26 @@ footer a {
   flex-direction: column;
 }
 
-.menus {
+.menu {
   animation: gliss ease-in-out 2s;
 }
 
-.menus:nth-child(2) {
+.menu:nth-child(2) {
   animation: gliss ease-in-out 1s;
 }
 
-.menus:nth-child(3) {
+.menu:nth-child(3) {
   animation: gliss ease-in-out 1.5s;
 }
 
-.restaurants-section {
+.section__restaurants {
   background: #fafafa;
   position: relative;
   bottom: 2rem;
   border-radius: 2rem 2rem 0 0;
 }
 
-.item-menu {
+.item__menu {
   margin-left: 1.1rem;
   text-transform: uppercase;
   border-bottom: 3px solid #99E2D0;
@@ -408,29 +567,28 @@ footer a {
   padding-bottom: 0.2rem;
 }
 
-.titles-menu {
+.menu__titles {
   padding: 1rem 0rem 1rem 1rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.titles-menu h3 {
+.menu__titles h3 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   padding-right: 3rem;
 }
 
-.anim-checking {
+.menu__description {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding-right: 2rem;
+  padding-right: 4.5rem;
   display: block;
-  width: 85%;
 }
 
-.menus {
+.menu {
   background: white;
   margin: 1rem;
   border-radius: 1rem;
@@ -439,7 +597,7 @@ footer a {
   cursor: pointer;
 }
 
-.vald {
+.menu__validation {
   background: #99E2D0;
   color: white;
   border-radius: 0 1rem 1rem 0;
@@ -447,39 +605,35 @@ footer a {
   overflow: hidden;
 }
 
-.i-2 {
+.menu__i {
   transform: translateX(-3.5rem);
 }
 
-.price-2 {
+.menu__price {
   padding: 2.8rem 0.6rem 0 0.6rem;
 }
 
-.vald .i-2 {
+.menu__validation .menu__i {
   padding: 1.8rem 1rem;
   font-size: 1.5rem;
 }
 
-.menus:hover .vald {
+.menu:hover .menu__validation {
   animation: icone 0.5s linear 1 forwards;
 }
 
-.menus:hover .i-2 {
+.menu:hover .menu__i {
   animation: spin_2 0.5s linear 1 forwards;
 }
 
-.checking {
+.menu__checking {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.menus:hover .titles-menu {
+.menu:hover .menu__titles {
   animation: checking_2 0.5s linear forwards;
-}
-
-.menus:hover .anim-checking {
-  animation: checking_3 0.5s linear forwards;
 }
 
 .button__style {
