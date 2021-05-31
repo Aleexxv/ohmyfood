@@ -4,7 +4,7 @@ header, .flex {
   display: flex;
 }
 
-.first-section, header, .flex-center {
+.first__section, header, .flex-center {
   justify-content: center;
   text-align: center;
 }
@@ -17,7 +17,7 @@ header, .flex {
   justify-content: space-between;
 }
 
-.numbering-of-functions {
+.numbering__of__functions {
   background: #9356DC;
   color: white;
   width: 1.5rem;
@@ -34,133 +34,10 @@ img {
   width: 100%;
 }
 
-.restaurants-cards figure {
+.third__section__restaurants__cards figure {
   background: white;
   border-radius: 1rem;
   margin: 1rem 0;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.logo {
-  width: 9rem;
-  padding: 1rem 0;
-  position: relative;
-}
-
-.bg-gliss {
-  background: white;
-  border-radius: 1rem;
-  margin: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 0 2rem 0;
-  z-index: 1;
-  animation: gliss ease-in-out 2s;
-  cursor: pointer;
-}
-
-.bg-gliss:nth-child(2) {
-  animation: gliss ease-in-out 1s;
-}
-
-.bg-gliss:nth-child(3) {
-  animation: gliss ease-in-out 1.5s;
-}
-
-header {
-  box-shadow: rgba(0, 0, 0, 0.2) 0 0 0.5rem 0;
-  position: relative;
-}
-
-h2 {
-  justify-content: start;
-}
-
-.h2 {
-  font-family: "Shrikhand", serif;
-  font-weight: 300;
-  padding: 0rem 1rem;
-}
-
-h3 {
-  margin: 0.3rem 0;
-}
-
-h4 {
-  font-family: "Shrikhand", serif;
-  font-weight: 300;
-}
-
-i {
-  padding: 0 1rem 0 0;
-}
-
-.i {
-  line-height: 4.5rem;
-  padding: 1rem;
-  font-size: 1.5rem;
-}
-
-img {
-  object-fit: cover;
-  line-height: -1rem;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-figure {
-  position: relative;
-}
-
-.loader-home-page {
-  animation: disparition linear 2.5s both;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-.loader {
-  border: 0.5rem solid #99E2D0;
-  width: 3rem;
-  height: 3rem;
-  border-right: 0.5rem solid rgba(255, 255, 255, 0);
-  border-left: 0.5rem solid rgba(255, 255, 255, 0);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.8);
-  animation: spin 1s linear infinite;
-  padding: 1rem;
-}
-
-.loader-1 {
-  border: 0.7rem solid rgba(255, 255, 255, 0);
-  width: 3rem;
-  height: 3rem;
-  border-top: 0.5rem solid #FF79DA;
-  border-bottom: 0.5rem solid #FF79DA;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.356);
-  animation: spin 2s linear infinite;
-  padding: 1rem;
-}
-
-.loader-2 {
-  border: 0.7rem solid rgba(255, 255, 255, 0);
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  border-top: 0.5rem solid #9356DC;
-  border-bottom: 0.5rem solid #9356DC;
-  background: rgba(255, 255, 255, 0.356);
-  animation: spin 3s linear infinite;
-  padding: 1rem;
 }
 
 @keyframes spin {
@@ -204,7 +81,6 @@ figure {
     width: 3.5rem;
   }
 }
-@keyframes coeur {}
 @keyframes icone2 {
   0% {
     opacity: 0;
@@ -226,39 +102,148 @@ figure {
     width: 80%;
   }
   100% {
-    width: 60%;
+    width: 70%;
   }
 }
-.first-section {
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 9rem;
+  padding: 1rem 0;
+  position: relative;
+}
+
+header {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 0.5rem 0;
+  position: relative;
+}
+
+h2 {
+  justify-content: start;
+}
+
+.h2 {
+  font-family: "Shrikhand", serif;
+  font-weight: 300;
+  padding: 0rem 1rem;
+}
+
+h3 {
+  margin: 0.3rem 0;
+}
+
+h4 {
+  font-family: "Shrikhand", serif;
+  font-weight: 300;
+}
+
+i {
+  padding: 0 1rem 0 0;
+}
+
+.i {
+  line-height: 4.5rem;
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+img {
+  object-fit: cover;
+  line-height: -1rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+figure {
+  position: relative;
+}
+
+figcaption {
+  padding-left: 1rem;
+}
+
+.loader__pages {
+  animation: disparition linear 2.5s both;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.loader__pages__1 {
+  border: 0.5rem solid #99E2D0;
+  width: 3rem;
+  height: 3rem;
+  border-right: 0.5rem solid rgba(255, 255, 255, 0);
+  border-left: 0.5rem solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  animation: spin 1s linear infinite;
+  padding: 1rem;
+}
+
+.loader__pages__2 {
+  border: 0.7rem solid rgba(255, 255, 255, 0);
+  width: 3rem;
+  height: 3rem;
+  border-top: 0.5rem solid #FF79DA;
+  border-bottom: 0.5rem solid #FF79DA;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.356);
+  animation: spin 2s linear infinite;
+  padding: 1rem;
+}
+
+.loader__pages__3 {
+  border: 0.7rem solid rgba(255, 255, 255, 0);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border-top: 0.5rem solid #9356DC;
+  border-bottom: 0.5rem solid #9356DC;
+  background: rgba(255, 255, 255, 0.356);
+  animation: spin 3s linear infinite;
+  padding: 1rem;
+}
+
+.first__section {
   flex-direction: column;
 }
 
-.first-section .presentation, .second-section {
+.first__section .first__section__presentation, .second__section {
   padding: 0 0.5rem;
 }
 
-.first-section, .third-section {
+.first__section, .third__section {
   background: #fafafa;
 }
 
-.background-color-grey-dark {
+.first__section__backgrond {
   background: #f0f0f0;
 }
 
-.background-color-grey-dark p {
+.first__section__backgrond p {
   padding: 1rem 0;
   margin-top: 0rem;
 }
 
-.third-section {
+.third__section {
   padding: 1.5rem 1rem;
 }
 
-.menu-cards ul {
+.second__section__cards ul {
   margin: 1rem;
   padding-left: 0;
 }
-.menu-cards ul li {
+.second__section__cards ul li {
   background: #fafafa;
   list-style: none;
   padding: 1.5rem 1rem;
@@ -267,25 +252,21 @@ figure {
   padding-left: 2rem;
 }
 
-.menu-cards i {
+.second__section__cards i {
   color: grey;
 }
 
-.menu-cards ul li:hover i {
+.second__section__cards ul li:hover i {
   color: #9356DC;
 }
 
-.menu-cards ul li:hover {
+.second__section__cards ul li:hover {
   background: rgba(210, 143, 255, 0.2);
 }
 
-.restaurants-cards figure img {
+.third__section__restaurants__cards figure img {
   border-radius: 1rem 1rem 0 0;
   height: 11rem;
-}
-
-figcaption {
-  padding-left: 1rem;
 }
 
 figcaption p {
@@ -293,7 +274,7 @@ figcaption p {
   margin: 0;
 }
 
-.main-btn {
+.button {
   background: linear-gradient(0.99turn, #9356DC, #FF79DA);
   color: white;
   padding: 1rem;
@@ -305,12 +286,12 @@ figcaption p {
   cursor: pointer;
 }
 
-.main-btn:hover {
+.button:hover {
   background: linear-gradient(0.7turn, #9356DC, #FF79DA);
   opacity: 0.9;
 }
 
-.news {
+.third__section__news {
   position: absolute;
   right: 1em;
   top: 1rem;
@@ -320,58 +301,47 @@ figcaption p {
   padding: 0.5rem 0.7rem;
 }
 
-.i-3 {
-  line-height: 4.5rem;
-  padding-top: 1.5rem;
-  font-size: 1.5rem;
-}
-
-.test-coeur {
-  padding-top: 1.5rem;
-}
-
-.coeur-plein {
+.third__section__restaurants__cards__menu--hearts--full {
   background: -webkit-linear-gradient(0.6turn, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0;
   z-index: 1;
   position: relative;
-  right: 28px;
+  right: 27px;
   opacity: 0;
 }
 
-.coeur-plein i {
+.third__section__restaurants__cards__menu--hearts--full i {
   font-size: 28px;
 }
 
-.menus-2:hover .coeur-plein {
+.third__section__restaurants__cards__menu:hover .third__section__restaurants__cards__menu--hearts--full {
   animation: icone2 0.5s ease-in-out 1 both;
   z-index: 2;
 }
 
-.menus-2 {
+.third__section__restaurants__cards__menu {
   position: relative;
-  right: 0.2rem;
 }
 
-.coeur-vide {
+.third__section__restaurants__cards__menu--hearts--vacuum {
   cursor: pointer;
   padding: 0;
 }
 
-.menus-2:hover .coeur-vide {
+.third__section__restaurants__cards__menu:hover .third__section__restaurants__cards__menu--hearts--vacuum {
   transition: color 0.5s linear;
   color: #fafafa;
 }
 
-.coeur-page-acceuil {
+.third__section__restaurants__cards--hearts {
   position: absolute;
   bottom: 1.5rem;
   right: 0rem;
 }
 
-.coeur-absolute {
+.third__section__figcaption {
   position: relative;
 }
 
@@ -392,6 +362,11 @@ footer a {
   color: white;
 }
 
+.logo__restaurants {
+  margin: 0 auto;
+  padding-right: 2rem;
+}
+
 .img-page-restaurants {
   height: 16rem;
 }
@@ -400,7 +375,7 @@ footer a {
   background: #fafafa;
 }
 
-.header-restaurants {
+.header__restaurants {
   flex-direction: column;
 }
 
@@ -452,7 +427,7 @@ footer a {
   text-overflow: ellipsis;
   padding-right: 2rem;
   display: block;
-  width: 80%;
+  width: 85%;
 }
 
 .menus {
@@ -507,176 +482,9 @@ footer a {
   animation: checking_3 0.5s linear forwards;
 }
 
-.logo-restaurants {
-  margin: 0 auto;
-  padding-right: 2rem;
-}
-
-.btn-page-menu {
+.button__style {
   padding: 1rem 2.5rem;
   margin: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  h2 {
-    display: flex;
-    justify-content: center;
-  }
-
-  nav, .first-section {
-    justify-content: space-around;
-    display: flex;
-  }
-
-  nav ul li {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav ul li i {
-    padding-bottom: 0.5rem;
-  }
-
-  .first-section {
-    flex-direction: row-reverse;
-  }
-
-  .second-section {
-    padding: 2rem 1rem;
-  }
-
-  .coeur-page-acceuil {
-    position: absolute;
-    bottom: 0.5rem;
-    right: -3rem;
-  }
-
-  .coeur-plein {
-    right: 60px;
-  }
-
-  .background-color-grey-dark {
-    flex-direction: row-reverse;
-    line-height: 10.5rem;
-    padding: 0 1.5rem;
-    background: #fafafa;
-  }
-
-  figure {
-    min-width: 17rem;
-  }
-
-  footer {
-    padding-left: 5rem;
-    padding-right: 5rem;
-    justify-content: space-around;
-    display: flex;
-    position: relative;
-    bottom: 0;
-  }
-
-  footer h4 {
-    font-size: 2rem;
-  }
-
-  div .fa-heart {
-    margin-top: 1rem;
-    padding: 1rem;
-  }
-
-  .h2 {
-    justify-content: space-around;
-    padding-top: 1.5rem;
-  }
-
-  .img-desktop {
-    max-height: 15rem;
-  }
-
-  .btn-page-menu {
-    margin: 1rem 0;
-  }
-}
-@media only screen and (min-width: 1224px) {
-  h2 {
-    display: flex;
-    justify-content: center;
-  }
-
-  nav, .section-desktop, .first-section {
-    justify-content: space-around;
-    display: flex;
-  }
-
-  .section-desktop-restaurants-pages {
-    display: table-cell;
-  }
-
-  .desktop-restaurants-pages {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  nav ul li {
-    display: initial;
-  }
-
-  .first-section {
-    flex-direction: row-reverse;
-    text-align: start;
-  }
-
-  .second-section {
-    padding: 2rem 0;
-  }
-
-  .background-color-grey-dark {
-    flex-direction: row-reverse;
-    line-height: 10.5rem;
-    padding: 0 3rem;
-    background: #fafafa;
-  }
-
-  figure {
-    width: 18rem;
-  }
-
-  footer {
-    padding-left: 15rem;
-    padding-right: 15rem;
-    justify-content: space-around;
-    display: flex;
-  }
-
-  footer h4 {
-    font-size: 2rem;
-  }
-
-  .h2 {
-    justify-content: space-around;
-    padding-top: 1.5rem;
-  }
-
-  .name-restaurants {
-    justify-content: space-around;
-  }
-
-  .item-menu {
-    padding-top: 2rem;
-  }
-
-  .menus {
-    min-width: 24rem;
-  }
-
-  .img-desktop {
-    max-height: 15rem;
-  }
-
-  .btn-page-menu {
-    margin: 1rem 0;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
