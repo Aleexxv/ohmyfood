@@ -21,29 +21,34 @@
     }
 
     .first__section{
-        flex-direction: row-reverse;
+        flex-direction: row-reverse !important;
     }
 
     .second__section{
         padding: 2rem 1rem;
     }
 
-    .third__section__restaurants__cards__menu--hearts{
-        position: absolute;
-        bottom: 0.5rem;
-        right: -3rem;
+    .third__section__restaurants__cards--hearts {
+        bottom: .5rem !important;
     }
 
-    .third__section__restaurants__cards__menu--hearts--full{
-        right: 60px;
+    .third__section__restaurants__cards--hearts {
+        top: -3rem;
     }
 
+    .third__section__restaurants__cards__menu--hearts--vacuum--pages{
+        top: 4.5rem !important;
+    }
 
-    .first__section__backgrond{
+    .third__section__restaurants__cards__menu--hearts--full--pages{
+        top: 3rem !important;
+    }
+    
+    .first__section__background{
         flex-direction: row-reverse;
         line-height: 10.5rem;
         padding: 0 1.5rem;
-        background: $background-color-grey-clear;
+        background: $background-color-grey-clear !important;
     }
 
     figure{
@@ -66,60 +71,28 @@
 
     //pages retaurants
 
-    div .fa-heart {
-        margin-top: 1rem;
-        padding: 1rem;
-    }
-
     .h2{
         justify-content: space-around;
         padding-top: 1.5rem;
     }
 
-    .img-desktop{
+    .img__desktop{
         max-height: 15rem;
     }
     
 
-    .btn-page-menu{
+    .button__style{
         margin: 1rem 0;
     }
 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width : 1224px) {
 
     h2{
         display: flex;
-        justify-content: center;
+        justify-content: center !important;
     }
 
     nav, .third__section__desktop, .first__section{
@@ -127,11 +100,32 @@
         display: flex;
     }
 
+    // .third__section__restaurants__cards--hearts {
+    //     position: absolute;
+    //     bottom: 2.5rem;
+    //     right: 0rem;
+    //     max-height: 3.5rem;
+    // }
+
     .third__section__restaurants__cards{
         display: table-cell;
     }
 
-    .desktop-restaurants-pages{
+    // .third__section__restaurants__cards__menu--hearts--vacuum {
+    //     bottom: 4.5rem;
+    // }
+
+    // .third__section__restaurants__cards__menu--hearts--full{
+    //     left: 0;
+    //     bottom: 4.5rem;
+    // }
+
+
+    .third__section__restaurants__cards__menu--hearts--vacuum--pages{
+        top: 4.5rem;
+    }
+
+    .desktop__restaurants__pages{
         display: flex;
         justify-content: space-around;
     }
@@ -146,26 +140,17 @@
     }
 
     .second__section{
-        padding: 2rem 0;
+        padding: 2rem 0 !important;
     }
 
     .first__section__background{
-        flex-direction: row-reverse;
-        line-height: 10.5rem;
         padding: 0 3rem;
-        background: $background-color-grey-clear;
     }
 
     figure{
     width: 18rem;
     }
 
-    footer{
-        padding-left: 15rem;
-        padding-right: 15rem;
-        justify-content: space-around;
-        display: flex;
-    }
 
     footer h4{
         font-size: 2rem;
@@ -179,23 +164,23 @@
         padding-top: 1.5rem;
     }
 
-    .name-restaurants{
+    .name__restaurants{
         justify-content: space-around;
     }
 
-    .item-menu{
+    .item__menu{
         padding-top: 2rem;
     }
 
-    .menus{
+    .menu{
         min-width: 24rem;
     }
 
-    .img-desktop{
+    .img__desktop{
         max-height: 15rem;
     }    
 
-    .btn-page-menu{
+    .button__styles{
         margin: 1rem 0;
     }
 

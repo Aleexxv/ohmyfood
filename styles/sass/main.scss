@@ -95,17 +95,6 @@ figcaption{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 //loader
 
 
@@ -154,27 +143,14 @@ figcaption{
     padding: 1rem;
 }
 
+//logo
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.logo__restaurants{
+    margin: 0 auto;
+    padding-right: 2rem;
+}
 
 //Section
-
 
 .first__section{
     @extend %flex-center;
@@ -189,11 +165,11 @@ figcaption{
     background: $background-color-grey-clear;
 }
 
-.first__section__backgrond{
+.first__section__background{
     background: $background-color-grey-dark;
 }
 
-.first__section__backgrond p{
+.first__section__background p{
     padding: 1rem 0;
     margin-top: 0rem;
 }
@@ -242,35 +218,10 @@ figcaption{
     }
 }
 
-
-
-
-// achanger
-figcaption p{
+.third__section__figcaption p{
     padding-bottom: 1rem;
     margin: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Button
 
@@ -282,34 +233,6 @@ figcaption p{
     background: linear-gradient(.7turn, $color-primary, $color-secondary);
     opacity: .9;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //like & new
@@ -325,10 +248,9 @@ figcaption p{
     padding: .5rem .7rem;
 }
 
-
-
 .third__section__restaurants__cards__menu--hearts--full{
     background: -webkit-linear-gradient(.60turn, $color-primary, $color-secondary);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 0;
@@ -381,26 +303,6 @@ figcaption p{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //footer
 
 footer{
@@ -420,43 +322,7 @@ footer a{
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//logo
-
-.logo__restaurants{
-    margin: 0 auto;
-    padding-right: 2rem;
-}
-
+// page-restaurants
 
 .img__page__restaurants{
     height: 16rem;
@@ -488,7 +354,6 @@ footer a{
     bottom: 2rem;
     border-radius: 2rem 2rem 0 0;
 }
-
 
 .item__menu{
     margin-left: 1.1rem;
@@ -571,315 +436,7 @@ footer a{
     animation: checking_2 .5s linear forwards;
 }
 
-
-
-
 .button__style{
     padding: 1rem 2.5rem;
     margin: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// @media only screen and (min-width : 768px) {
-
-//     h2{
-//         display: flex;
-//         justify-content: center;
-//     }
-
-//     nav, .first__section{
-//         justify-content: space-around;
-//         display: flex;
-//     }
-
-//     nav ul li {
-//         display: flex;
-//         flex-direction: column;
-//         text-align: center;
-//     }
-
-//     nav ul li i{
-//         padding-bottom: .5rem;
-//     }
-
-//     .first__section{
-//         flex-direction: row-reverse;
-//     }
-
-//     .second__section{
-//         padding: 2rem 1rem;
-//     }
-
-//     .third__section__restaurants__cards__menu--hearts{
-//         position: absolute;
-//         bottom: -3.5rem;
-//         right: .5rem;
-//     }
-
-
-//     .first__section__backgrond{
-//         flex-direction: row-reverse;
-//         line-height: 10.5rem;
-//         padding: 0 1.5rem;
-//         background: $background-color-grey-clear;
-//     }
-
-//     figure{
-//     min-width: 17rem;
-//     }
-
-//     footer{
-//         padding-left: 5rem;
-//         padding-right: 5rem;
-//         justify-content: space-around;
-//         display: flex;
-//         position: relative;
-//         bottom: 0;
-//     }
-
-//     footer h4{
-//         font-size: 2rem;
-//     }
-
-
-//     //pages retaurants
-
-//     div .fa-heart {
-//         margin-top: 1rem;
-//         padding: 1rem;
-//     }
-
-//     .h2{
-//         justify-content: space-around;
-//         padding-top: 1.5rem;
-//     }
-
-//     .img-desktop{
-//         max-height: 15rem;
-//     }
-    
-
-//     .button{
-//         margin: 1rem 0;
-//     }
-
-// }
-
-// @media only screen and (min-width : 1224px) {
-
-//     h2{
-//         display: flex;
-//         justify-content: center;
-//     }
-
-//     nav, .third__section__desktop, .first__section{
-//         justify-content: space-around;
-//         display: flex;
-//     }
-
-//     .third__section__restaurants__cards{
-//         display: table-cell;
-//     }
-
-//     .desktop-restaurants-pages{
-//         display: flex;
-//         justify-content: space-around;
-//     }
-
-//     nav ul li {
-//         display: initial;
-//     }
-
-//     .first__section{
-//         flex-direction: row-reverse;
-//         text-align: start;
-//     }
-
-//     .second__section{
-//         padding: 2rem 0;
-//     }
-
-//     .first__section__background{
-//         flex-direction: row-reverse;
-//         line-height: 10.5rem;
-//         padding: 0 3rem;
-//         background: $background-color-grey-clear;
-//     }
-
-//     figure{
-//     width: 18rem;
-//     }
-
-//     footer{
-//         padding-left: 15rem;
-//         padding-right: 15rem;
-//         justify-content: space-around;
-//         display: flex;
-//     }
-
-//     footer h4{
-//         font-size: 2rem;
-//     }
-
-
-//     //pages retaurants
-
-//     .h2{
-//         justify-content: space-around;
-//         padding-top: 1.5rem;
-//     }
-
-//     .name-restaurants{
-//         justify-content: space-around;
-//     }
-
-//     .item-menu{
-//         padding-top: 2rem;
-//     }
-
-//     .menus{
-//         min-width: 24rem;
-//     }
-
-//     .img-desktop{
-//         max-height: 15rem;
-//     }    
-
-//     .btn-page-menu{
-//         margin: 1rem 0;
-//     }
-
-// }
