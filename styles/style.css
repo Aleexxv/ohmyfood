@@ -253,7 +253,7 @@ img {
     padding-right: 1.5rem;
   }
 }
-body {
+html, body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
