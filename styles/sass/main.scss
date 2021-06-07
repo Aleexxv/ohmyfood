@@ -78,7 +78,6 @@ i{
 img{
     @extend %width-100;
     object-fit: cover;
-    line-height: -1rem;
 }
 
 a{
@@ -167,6 +166,7 @@ figcaption{
 
 .first__section__background{
     background: $background-color-grey-dark;
+    cursor: pointer;
 }
 
 .first__section__background p{
@@ -187,7 +187,7 @@ figcaption{
             background: $background-color-grey-clear;
             @include item-menu-card;
             position: relative;
-            padding-left: 2rem;
+            padding-left: 2rem;cursor: pointer;
         }
     }
 }
@@ -439,4 +439,9 @@ footer a{
 .button__style{
     padding: 1rem 2.5rem;
     margin: 0;
+}
+
+.button__height{
+    height: 4rem;
+    padding-top: 1.5rem;
 }

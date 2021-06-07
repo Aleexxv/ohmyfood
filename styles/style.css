@@ -301,7 +301,6 @@ i {
 
 img {
   object-fit: cover;
-  line-height: -1rem;
 }
 
 a {
@@ -381,6 +380,7 @@ figcaption {
 
 .first__section__background {
   background: #f0f0f0;
+  cursor: pointer;
 }
 
 .first__section__background p {
@@ -403,6 +403,7 @@ figcaption {
   border-radius: 1rem;
   position: relative;
   padding-left: 2rem;
+  cursor: pointer;
 }
 
 .second__section__cards i {
@@ -635,6 +636,11 @@ footer a {
 .button__style {
   padding: 1rem 2.5rem;
   margin: 0;
+}
+
+.button__height {
+  height: 4rem;
+  padding-top: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
