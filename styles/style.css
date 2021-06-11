@@ -38,6 +38,7 @@ img {
   background: white;
   border-radius: 1rem;
   margin: 1rem 0;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -135,6 +136,7 @@ img {
 
   .third__section__restaurants__cards {
     display: table-cell;
+    width: 23%;
   }
 
   .third__section__restaurants__cards__menu--hearts--vacuum--pages {
@@ -323,6 +325,7 @@ figcaption {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  pointer-events: none;
 }
 
 .loader__pages__1 {
