@@ -100,26 +100,11 @@
         display: flex;
     }
 
-    // .third__section__restaurants__cards--hearts {
-    //     position: absolute;
-    //     bottom: 2.5rem;
-    //     right: 0rem;
-    //     max-height: 3.5rem;
-    // }
 
     .third__section__restaurants__cards{
         display: table-cell;
         width: 23%;
     }
-
-    // .third__section__restaurants__cards__menu--hearts--vacuum {
-    //     bottom: 4.5rem;
-    // }
-
-    // .third__section__restaurants__cards__menu--hearts--full{
-    //     left: 0;
-    //     bottom: 4.5rem;
-    // }
 
 
     .third__section__restaurants__cards__menu--hearts--vacuum--pages{
@@ -174,7 +159,7 @@
     }
 
     .menu{
-        min-width: 24rem;
+        width: 24rem;
     }
 
     .img__desktop{
