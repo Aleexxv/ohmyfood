@@ -460,8 +460,6 @@ figcaption {
 
 .third__section__restaurants__cards__menu--hearts--full {
   background: -webkit-linear-gradient(0.6turn, #9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0;
   z-index: 1;
